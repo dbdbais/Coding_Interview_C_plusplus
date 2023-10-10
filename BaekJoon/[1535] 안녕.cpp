@@ -25,11 +25,11 @@ int main(){
        for(int k=100;k>cost[i];k--){    //0이 되는 순간 기쁨을 잃음을 참고!
            dp[k] = max(dp[k],dp[k-cost[i]]+happy[i]);
        }
-       /*
+
        for(int a=0;a<=100;a++){
            cout << dp[a]<< " ";
        }
-       cout<<endl; DEBUG */
+       cout<<endl;
     }
     cout << dp[100];
     return 0;
